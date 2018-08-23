@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 public class BasesClass {
 	public static WebDriver driver;
 	public static boolean bResult;
-	public  BasesClass(WebDriver driver){
+
+	public BasesClass(WebDriver driver) {
 		BasesClass.driver = driver;
 		BasesClass.bResult = true;
 	}

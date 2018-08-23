@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Login Tests" parallel="methods" thread-count="2">
+	<test name="testngTest">
+		<classes>
+			<class name="com.aut.cura.TestLoginLogout_Negative" />
+			<class name="com.aut.cura.TestLoginLogout_Positive" />
+		</classes>
+	</test>
+</suite>
