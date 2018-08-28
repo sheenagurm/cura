@@ -21,7 +21,7 @@ public class Utils {
 		String sBrowserName;
 		try {
 			sBrowserName = iTestCaseRow;
-			if (sBrowserName.equals("Mozilla")) {
+			if (sBrowserName.equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
 				driver.manage().window().maximize();
 				System.out.println("New driver instantiated");

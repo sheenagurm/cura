@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.aut.cura.TestLoginLogout_Negative">
+      <class name="com.aut.cura.TestLoginLogout_Positive">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="testMethod"/>
+          <include name="testMethod_loginPositive"/>
+          <include name="testMethod_loginNegative"/>
         </methods>
-      </class> <!-- com.aut.cura.TestLoginLogout_Negative -->
+      </class> <!-- com.aut.cura.TestLoginLogout_Positive -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
