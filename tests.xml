@@ -3,7 +3,7 @@
 	<test name="testngTest">
 	<parameter name="browser" value="firefox"/>
 		<classes>
-			<class name="com.aut.cura.TestLoginLogout_Positive" />
+			<class name="com.aut.cura.Test_Login" />
 		</classes>
 	</test>
 </suite>
