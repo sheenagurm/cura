@@ -34,5 +34,15 @@ public class LandingPage extends BasesClass {
 		}
 		return element;
 	}
+	public static WebElement btn_makeAppt() throws Exception {
+		try {
+			element = driver.findElement(By.id("btn-make-appointment"));
 
+			System.out.println("Make Appt btn is found on the Home Page");
+		} catch (Exception e) {
+			System.out.println("Make Appt btn is not found on the Home Page");
+			throw (e);
+		}
+		return element;
+	}
 }

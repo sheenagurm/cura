@@ -34,5 +34,17 @@ public class Home_Page extends BasesClass {
 		}
 		return element;
 	}
+	public static WebElement btn_makeAppt() throws Exception {
+		try {
+			element = driver.findElement(By.id("btn-make-appointment"));
+
+			System.out.println("" + "Logout link is found on the Home Page");
+		} catch (Exception e) {
+			System.out.println("Logout link is not found on the Home Page");
+			throw (e);
+		}
+		return element;
+	}
+	
 
 }

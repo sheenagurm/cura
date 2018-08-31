@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.aut.cura.TestLoginLogout_Positive">
+      <class name="com.aut.cura.BookAppointmentWithoutLogin">
         <methods>
-          <include name="testMethod_loginPositive"/>
-          <include name="testMethod_loginNegative"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="testMethod_bookAppintmentWithHospitalReadmission" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.aut.cura.TestLoginLogout_Positive -->
+      </class> <!-- com.aut.cura.BookAppointmentWithoutLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-08-28T07:37:28Z" name="Login Tests" finished-at="2018-08-28T07:38:12Z" duration-ms="44426">
+  <suite name="Default suite" duration-ms="6946177" started-at="2018-08-31T08:54:31Z" finished-at="2018-08-31T10:50:17Z">
     <groups>
     </groups>
-    <test started-at="2018-08-28T07:37:28Z" name="testngTest" finished-at="2018-08-28T07:38:12Z" duration-ms="44426">
-      <class name="com.aut.cura.TestLoginLogout_Positive">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.aut.cura.TestLoginLogout_Positive@bccb269]" started-at="2018-08-28T13:07:28Z" name="beforeMethod" finished-at="2018-08-28T13:08:01Z" duration-ms="33232" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="6946177" started-at="2018-08-31T08:54:31Z" finished-at="2018-08-31T10:50:17Z">
+      <class name="com.aut.cura.BookAppointmentWithoutLogin">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.aut.cura.BookAppointmentWithoutLogin@222545dc]" name="beforeMethod" is-config="true" duration-ms="25379" started-at="2018-08-31T14:24:31Z" finished-at="2018-08-31T14:24:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.aut.cura.TestLoginLogout_Positive@bccb269]" started-at="2018-08-28T13:07:28Z" name="beforeMethod" finished-at="2018-08-28T13:07:47Z" duration-ms="18881" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testMethod_loginPositive(java.lang.String, java.lang.String)[pri:0, instance:com.aut.cura.TestLoginLogout_Positive@bccb269]" started-at="2018-08-28T13:07:47Z" name="testMethod_loginPositive" data-provider="login" finished-at="2018-08-28T13:07:59Z" duration-ms="12564" status="PASS">
+        <test-method status="PASS" signature="testMethod_bookAppintmentWithHospitalReadmission(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.aut.cura.BookAppointmentWithoutLogin@222545dc]" name="testMethod_bookAppintmentWithHospitalReadmission" duration-ms="6920426" started-at="2018-08-31T14:24:57Z" data-provider="data" finished-at="2018-08-31T16:20:17Z">
           <params>
             <param index="0">
               <value>
@@ -41,35 +23,35 @@
                 <![CDATA[ThisIsNotAPassword]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tokyo CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[31-24-2018]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[HNiGXz]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Medicare]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod_loginPositive -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.aut.cura.TestLoginLogout_Positive@bccb269]" started-at="2018-08-28T13:07:59Z" name="afterMethod" finished-at="2018-08-28T13:08:05Z" duration-ms="5717" status="PASS">
+        </test-method> <!-- testMethod_bookAppintmentWithHospitalReadmission -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.aut.cura.BookAppointmentWithoutLogin@222545dc]" name="afterMethod" is-config="true" duration-ms="153" started-at="2018-08-31T16:20:17Z" finished-at="2018-08-31T16:20:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="testMethod_loginNegative(java.lang.String, java.lang.String)[pri:0, instance:com.aut.cura.TestLoginLogout_Positive@bccb269]" started-at="2018-08-28T13:08:01Z" name="testMethod_loginNegative" data-provider="login" finished-at="2018-08-28T13:08:12Z" duration-ms="11041" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John Doe]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ThisIsNotAPaord]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod_loginNegative -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.aut.cura.TestLoginLogout_Positive@bccb269]" started-at="2018-08-28T13:08:12Z" name="afterMethod" finished-at="2018-08-28T13:08:12Z" duration-ms="52" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.aut.cura.TestLoginLogout_Positive -->
-    </test> <!-- testngTest -->
-  </suite> <!-- Login Tests -->
+      </class> <!-- com.aut.cura.BookAppointmentWithoutLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="methods" name="Failed suite [Login Tests]">
-  <parameter name="browser" value="mozilla"/>
-  <test parallel="methods" name="testngTest(failed)">
-    <parameter name="browser" value="mozilla"/>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.aut.cura.TestLoginLogout_Positive">
+      <class name="com.aut.cura.BookAppointmentWithoutLogin">
         <methods>
-          <include name="testMethod_loginPositive" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="testMethod_loginNegative" invocation-numbers="0"/>
           <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="testMethod_bookAppintmentWithHospitalReadmission" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.aut.cura.TestLoginLogout_Positive -->
+      </class> <!-- com.aut.cura.BookAppointmentWithoutLogin -->
     </classes>
-  </test> <!-- testngTest(failed) -->
-</suite> <!-- Failed suite [Login Tests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -24,7 +24,7 @@ import com.aut.cura.pageObjects.LandingPage;
 import com.aut.cura.pageObjects.Login_Page;
 import com.aut.cura.utilities.Utils;
 
-public class BookAppointmentAfterLogin {
+public class BookAppointmentWithoutLogin {
 	public WebDriver driver;
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-mm-yyyy");
 
@@ -41,8 +41,8 @@ public class BookAppointmentAfterLogin {
 			String appointmentCmnt, String heathcareProg) throws Exception {
 
 		System.out.println("Starting Test");
-		LandingPage.lnk_menu().click();
-		LandingPage.lnk_Login().click();
+		LandingPage.btn_makeAppt().click();
+		Utils.waitForElement(Login_Page.txtbx_Password());
 		LLogIn_Action.execute(usrnm, passwrd);
 		Utils.waitForElement(Home_Page.lnk_menu());
 		Utils.waitForElement(CreateApointment_Page.btn_bookAppointment());
@@ -62,23 +62,7 @@ Utils.waitForElement(Home_Page.btn_makeAppt());
 	public Object[][] getDataFromDataprovider() {
 		return new Object[][] {
 				{ "John Doe", "ThisIsNotAPassword", "Tokyo CURA Healthcare Center",
-						LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "Medicare" },
-				{ "John Doe", "ThisIsNotAPassword", "Tokyo CURA Healthcare Center",
-						LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "Medicaid" },
-				{ "John Doe", "ThisIsNotAPassword", "Tokyo CURA Healthcare Center",
-						LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "None" },
-				{ "John Doe", "ThisIsNotAPassword", "Hongkong CURA Healthcare Center",
-							LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "Medicare" },
-					{ "John Doe", "ThisIsNotAPassword", "Hongkong CURA Healthcare Center",
-							LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "Medicaid" },
-					{ "John Doe", "ThisIsNotAPassword", "Hongkong CURA Healthcare Center",
-							LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "None" },
-					{ "John Doe", "ThisIsNotAPassword", "Seoul CURA Healthcare Center",
-								LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "Medicare" },
-						{ "John Doe", "ThisIsNotAPassword", "Seoul CURA Healthcare Center",
-								LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "Medicaid" },
-						{ "John Doe", "ThisIsNotAPassword", "Seoul CURA Healthcare Center",
-								LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "None" }};
+						LocalDateTime.now().format(formatter), RandomStringUtils.randomAlphabetic(6), "Medicare" }};
 	}
 
 	@AfterMethod
