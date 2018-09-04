@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Login Tests" parallel="methods" thread-count="2">
-	<test name="testngTest">
+<suite name="Test Email" parallel="methods" thread-count="2">
+	<test name="testEmail">
 	<parameter name="browser" value="firefox"/>
 	<classes>
 		<class name="com.aut.cura.BookAppointmentWithoutLogin"></class>

@@ -1,0 +1,1 @@
+{"uuid":"c8f268d6-57bb-40f0-ad82-424754e018e3","name":"com.aut.cura.BookAppointmentWithoutLogin.afterMethod","description":"","start":1536049353694,"stop":1536049356832,"children":["456187ad-7a83-42a4-95df-f17783eea624"],"afters":[{"name":"afterMethod","status":"passed","stage":"finished","description":"","start":1536049353695,"stop":1536049356832}]}
